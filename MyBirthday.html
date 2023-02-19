@@ -1,0 +1,82 @@
+<html lang="vi" __fvdsurfcanyoninserted="1" class="
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+        clickberry-extension
+        clickberry-extension-standalone
+    ">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/jpg" href="./meo.jpg" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        window.open = function () { };
+        window.print = function () { };
+        // Support hover state for mobile.
+        if (false) {
+            window.ontouchstart = function () { };
+        }
+    </script>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <meta content="clickberry-extension-here" />
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css" />
+    <div class="pyro">
+        <div class="before">
+
+        </div>
+        <div class="after">
+
+        </div>
+        <div class="container">
+            <!-- 2. Dòng chữ Happy Birthday
+                Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
+            <div class="balloon">
+                <div><span>I</span></div>
+                <div><span>L</span></div>
+                <div><span>O</span></div>
+                <div><span>V</span></div>
+                <div><span>E</span></div>
+                <div><span>Y</span></div>
+                <div><span>O</span></div>
+                <div><span>U</span></div>
+
+            </div>
+            <div class="avatar">
+                <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
+                <img src="khanh3.jpg" alt="" class="avatar__img" onclick="showMessage()" />
+                <!-- 4. Tên của người đó -->
+                <h1 onclick="showMessage()" class="avatar__title">Kiều Khanh </h1>
+            </div>
+
+            <!-- 5. Phần nhạc -->
+            <!-- <audio id="player" autoplay loop>
+                    <source src="music.mp3" type="audio/mp3">
+                </audio>  -->
+            <audio src="./music.mp3" autoplay loop></audio>
+        </div>
+    </div>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+        function showMessage() {
+            // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+            swal({
+                title: "Lá thư của bồ Khanh dành cho cỗ (nhớ đọc hết nhé vợ có thể hơi dài)",
+                text: "Đầu tiên, chị yêu Khanh nhiều lắm. Sau khi nghe vợ kể chuyện về quá khứ của vợ như nào chị thấy thương vợ hơn nhiều có thể quá khứ chị không ở đó che chở vợ được nhưng bây giờ thì có thể rồi chị ở đây với Khanh yêu thương Khanh bằng tất cả những gì chị có đôi lúc chị có vô tâm với vợ chị xin lỗi nhé. Chuyện quá khứ đã qua rồi em cứ cho nó qua đi đừng nghĩ ngày mới nào cũng tệ như quá khứ, mỗi ngày mới là 1 niềm vui và chị sẽ đảm nhận việc đem lại niềm vui cho em mỗi ngày hehe. Như chị từng nói vợ cười rất vô tư chị thích nụ cười của vợ lắm kiểu chỉ cần nghe là thoải mái cả người ấy nên vợ cười nhiều vào á nụ cười của vợ đẹp lắm đừng sợ hãi hay run sợ thứ gì cả có gì cứ nói cho chị chị sẽ trở thành người khổng lộ ôm hết nổi buồn của vợ :3  Người yêu IT của Khanh <3",
+                button: {
+                    text: "❤️️",
+                },
+            });
+        }
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
